@@ -1,0 +1,21 @@
+<form dir="rtl">
+    <div>
+        <label for="numri">מספר ימין:</label>
+        <input [(ngModel)]="numbers.numri" name="nnumri" id="numri" type="text" required>
+    </div>
+    <div>
+        <label for="numle">מספר שמאל:</label>
+        <input [(ngModel)]="numbers.numlef" name="nnumle" id="numle" type="text" required>
+    </div>
+    <div>
+        <label for="cilri">צילינדר ימין:</label>
+        <input [(ngModel)]="numbers.cilri" name="cilrit" id="cilri" type="text">
+    </div>
+    <div>
+        <label for="cille">צילינדר שמאל:</label>
+        <input [(ngModel)]="numbers.cille" name="cilrle" id="cille" type="text">
+    </div>
+    <div>
+        <button (click)="add(numbers)" type="button" class="btn btn-primary">send</button>
+    </div>
+</form>

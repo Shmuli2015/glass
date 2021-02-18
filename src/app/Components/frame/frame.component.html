@@ -1,0 +1,12 @@
+
+<div class="col">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" [src]=frame.img>
+    <div class="card-body">
+      <h5 class="card-title">{{frame.name}}</h5>
+      <p class="card-text">{{frame.price | currency}}</p>
+      <p>{{frame.Desc}}</p>
+      <a routerLink="/lens" class="btn btn-primary" (click)="add(frame)">Next</a>
+    </div>
+  </div>
+</div>
